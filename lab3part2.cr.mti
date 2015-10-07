@@ -1,0 +1,8 @@
+C:/Modeltech_pe_edu_10.4a/examples/lab3/packagesorter.v {1 {vlog -work work -stats=none C:/Modeltech_pe_edu_10.4a/examples/lab3/packagesorter.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module Package_Sorter
+
+Top level modules:
+	Package_Sorter
+
+} {} {}}
