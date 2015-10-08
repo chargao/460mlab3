@@ -1,0 +1,19 @@
+module Traffic_Light (CLK,RST, GA,YA,RA, GB,YB,RB, GW,RW);
+input CLK,RST;
+output reg GA,YA,RA, GB,YB,RB, GW,RW;
+reg [7:0] CountDown;
+reg [3:0] State, NextState;
+
+always @(posedge CLK, posedge RST)
+begin
+	if(!RST) begin //regular operation
+	
+	end
+	else begin//maintenance mode
+	
+	end
+end
+
+assign State = NextState;
+
+endmodule

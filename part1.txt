@@ -1,0 +1,29 @@
+Requirements
+Interpreting the client's needs, stating them in a formal manner. Input is client's needs, output is a requirements doc. Tool is word processor. 
+
+Design Specifications
+Based on the requirements, determine the FPGA to use, other hardware specs, etc. Input is a requirements doc, output is SRS (System Requirements Specification). Tool used is any word processor/text editor. 
+
+Design Entry (VHDL, Verilog, Schematic Capture)
+Commit the design to code/schematic, whether through HDL or schematic capture (old-school). HDL candidates are Verilog (what we use in this class) and VHDL (what we used in EE316). Input is SRS, output is HDL files. Tool we use is ModelSim.
+
+Simulation
+Simulation is essentially testing in software to confirm that the design functions as expected. Input is HDL files and .do files, output is waveforms. Tool we use is ModelSim. 
+
+Logic Synthesis
+Converting high-level description into gates, flip-flops, etc, similar to a compilation step. Input is HDL files, output is netlist. Tool we use is Vivado. 
+
+Post Synthesis Simulation
+Once again testing the design, this time taking into account the limitations of hardware / timing. Input is netlist, output are reports. Tool we use is Vivado.
+
+Mapping, Placement, Routing
+These steps move the hardware design onto an actual FPGA/some other hardware. Input is netlist, output is bitstream. Tool is Vivado. 
+
+FPGA Programming Unit
+Writing the bitstream to program an actual FPGA. Input is bitstream, output is JTAG. Tool is vivado.
+
+Configured FPGAs
+Input is JTAG. Output is the FPGA board. Tool is Vivado. 
+
+ASIC Masks (unused)
+If we were using ASIC (custom hardware), then an ASIC mask is the wire traces. We do not use these in EE460M. 
