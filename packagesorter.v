@@ -48,6 +48,7 @@ begin
 				6: Grp6 <= Grp6+1;
 				default: ; //do nothing
 			endcase
+			NewItem <= 0;
 		end
 		else ; //do nothing
 	end
