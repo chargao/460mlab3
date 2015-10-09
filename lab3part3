@@ -1,0 +1,3 @@
+force CLK 0 0ns, 1 10ns -repeat 20ns
+force RST 0 0ns, 1 200ns, 0 240ns 
+run  250ns

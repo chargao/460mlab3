@@ -1,4 +1,25 @@
-C:/Modeltech_pe_edu_10.4a/examples/lab3/packagesorter.v {1 {vlog -work work -stats=none C:/Modeltech_pe_edu_10.4a/examples/lab3/packagesorter.v
+C:/Modeltech_pe_edu_10.4a/examples/lab3/TOP.v {1 {vlog -work work -stats=none C:/Modeltech_pe_edu_10.4a/examples/lab3/TOP.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module Top
+
+Top level modules:
+	Top
+
+} {} {}} C:/Modeltech_pe_edu_10.4a/examples/lab3/Divider.v {1 {vlog -work work -stats=none C:/Modeltech_pe_edu_10.4a/examples/lab3/Divider.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module Divider
+
+Top level modules:
+	Divider
+
+} {} {}} C:/Modeltech_pe_edu_10.4a/examples/lab3/trafficlight.v {1 {vlog -work work -stats=none C:/Modeltech_pe_edu_10.4a/examples/lab3/trafficlight.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module Traffic_Light
+
+Top level modules:
+	Traffic_Light
+
+} {} {}} C:/Modeltech_pe_edu_10.4a/examples/lab3/packagesorter.v {1 {vlog -work work -stats=none C:/Modeltech_pe_edu_10.4a/examples/lab3/packagesorter.v
 Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
 -- Compiling module Package_Sorter
 

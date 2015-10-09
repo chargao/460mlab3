@@ -8,25 +8,91 @@ z2
 !i10f 100
 cModel Technology
 dC:/Modeltech_pe_edu_10.4a/examples/lab2
+vDivider
+Z0 !s110 1444417554
+!i10b 1
+!s100 <^FUIeOEzT17VGNlJJi_R3
+I=Oa[oJMhjjCnFWoSU@m_@0
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dC:/Modeltech_pe_edu_10.4a/examples/lab3
+w1443814325
+8C:/Modeltech_pe_edu_10.4a/examples/lab3/Divider.v
+FC:/Modeltech_pe_edu_10.4a/examples/lab3/Divider.v
+L0 1
+Z3 OP;L;10.4a;61
+r1
+!s85 0
+31
+Z4 !s108 1444417554.000000
+!s107 C:/Modeltech_pe_edu_10.4a/examples/lab3/Divider.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Modeltech_pe_edu_10.4a/examples/lab3/Divider.v|
+!s101 -O0
+!i113 1
+Z5 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact -O0
+n@divider
 vPackage_Sorter
-!s110 1444155902
+R0
 !i10b 1
 !s100 iV?DPY0MQhP6zLLdn4ob=3
 IFAQ6zOXHE<<4kIXJX>Xc;2
-VDg1SIo80bB@j0V0VzS_@n1
-dC:/Modeltech_pe_edu_10.4a/examples/lab3
+R1
+R2
 w1444155848
 8C:/Modeltech_pe_edu_10.4a/examples/lab3/packagesorter.v
 FC:/Modeltech_pe_edu_10.4a/examples/lab3/packagesorter.v
 L0 1
-OP;L;10.4a;61
+R3
 r1
 !s85 0
 31
-!s108 1444155902.000000
+!s108 1444417553.000000
 !s107 C:/Modeltech_pe_edu_10.4a/examples/lab3/packagesorter.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Modeltech_pe_edu_10.4a/examples/lab3/packagesorter.v|
 !s101 -O0
 !i113 1
-o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact -O0
+R5
 n@package_@sorter
+vTop
+R0
+!i10b 1
+!s100 U9Ci3jnfCaQFa7Y;1jBPc2
+Id59:7O2HPQLTZoFPD@TSg0
+R1
+R2
+w1444417545
+8C:/Modeltech_pe_edu_10.4a/examples/lab3/TOP.v
+FC:/Modeltech_pe_edu_10.4a/examples/lab3/TOP.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Modeltech_pe_edu_10.4a/examples/lab3/TOP.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Modeltech_pe_edu_10.4a/examples/lab3/TOP.v|
+!s101 -O0
+!i113 1
+R5
+n@top
+vTraffic_Light
+R0
+!i10b 1
+!s100 zm@2[j^^@;fzY^g@1=XOj2
+I6Fe@zJX3f<XYU0cWIYMaY3
+R1
+R2
+w1444417106
+8C:/Modeltech_pe_edu_10.4a/examples/lab3/trafficlight.v
+FC:/Modeltech_pe_edu_10.4a/examples/lab3/trafficlight.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Modeltech_pe_edu_10.4a/examples/lab3/trafficlight.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Modeltech_pe_edu_10.4a/examples/lab3/trafficlight.v|
+!s101 -O0
+!i113 1
+R5
+n@traffic_@light
