@@ -1,8 +1,8 @@
 module Traffic_Light (CLK,RST, GA,YA,RA, GB,YB,RB, GW,RW);
 input CLK,RST;
 output reg GA,YA,RA, GB,YB,RB, GW,RW;
-reg [7:0] Countdown;
-reg [3:0] State, NextState;
+reg [2:0] Countdown;
+reg [2:0] State, NextState;
 reg Flash;
 
 initial
@@ -22,31 +22,36 @@ begin
 	3: begin NextState = 4; Countdown = 1; end 
 	4: begin NextState = 5; Countdown = 3; end 
 	5: begin NextState = 0; Countdown = 7; end 
-	6: begin NextState = 0; Countdown = 0; end //RST 
+	6: begin NextState = 0; Countdown = 1; end //RST 
 	default: begin NextState = 0; Countdown = 0; end
 	endcase
 end
 
 always @(posedge CLK)
 begin
-	case(State) 
-	0: {GA,YA,RA,GB,YB,RB,GW,RW} <=  8'b10000101;
-	1: {GA,YA,RA,GB,YB,RB,GW,RW} <=  8'b01000101;
-	2: {GA,YA,RA,GB,YB,RB,GW,RW} <=  8'b00110001;
-	3: {GA,YA,RA,GB,YB,RB,GW,RW} <=  8'b00101001;
-	4: {GA,YA,RA,GB,YB,RB,GW,RW} <=  8'b00100110; 
-	5: {GA,YA,RA,GB,YB,RB,GW,RW} <=  {7'b0010010,Flash}; 
-	6: {GA,YA,RA,GB,YB,RB,GW,RW} <=  {2'b00,Flash,2'b00,Flash,1'b0,Flash}; //RST 
-	default: {GA,YA,RA,GB,YB,RB,GW,RW} <=  8'b00000000;
-	endcase
+	
 
-	if(!RST) begin //regular operation
+	if(RST) begin //maintenance mode
+		State <= 6;
+
+	end
+	else begin //regular operation
 		if (Countdown) Countdown <= Countdown - 1;
 		else State <= NextState;
+
+		case(State) 
+		0: {GA,YA,RA,GB,YB,RB,GW,RW} <=  8'b10000101;
+		1: {GA,YA,RA,GB,YB,RB,GW,RW} <=  8'b01000101;
+		2: {GA,YA,RA,GB,YB,RB,GW,RW} <=  8'b00110001;
+		3: {GA,YA,RA,GB,YB,RB,GW,RW} <=  8'b00101001;
+		4: {GA,YA,RA,GB,YB,RB,GW,RW} <=  8'b00100110; 
+		5: {GA,YA,RA,GB,YB,RB,GW,RW} <=  {7'b0010010,Flash}; 
+		6: {GA,YA,RA,GB,YB,RB,GW,RW} <=  {2'b00,Flash,2'b00,Flash,1'b0,Flash}; //RST 
+		default: {GA,YA,RA,GB,YB,RB,GW,RW} <=  8'b00000000;
+		endcase
 	end
-	else begin //maintenance mode
-		State <= 6;
-	end
+
+	
 
 	Flash <= ~Flash;
 end
